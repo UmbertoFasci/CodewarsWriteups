@@ -40,7 +40,7 @@ n corresponds to the number of rows associated with
 the diamond shape. n also corresponds to the number
 of asterisks of the center row. The spaces required 
 at the beginning and end of the shape has the property
-(n+1)/2.
+(n-1)/2.
 """
 
 def diamond(n):
