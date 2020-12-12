@@ -25,3 +25,12 @@ def namelist(names):
         strr = ', '.join(array)
         strr += ' & ' + names[-1]['name'] if strr != '' else names[-1]['name']
     return strr
+
+def namelist2(names):
+    if len(names) > 1:
+        return '{} & {}'.format(', '.join(name['name'] for name in names[:-1],
+                                          names[-1]['name'])
+    elif names:
+        return names[0]['name']
+    else:
+        return ''
